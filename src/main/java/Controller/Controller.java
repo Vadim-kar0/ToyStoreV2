@@ -44,8 +44,11 @@ public class Controller {
                 start();
                 break;
             case 3:
+                System.out.println("Введите имя участника:");
                 String s = userView.getLine();
-                lotteryService.putParticipant(new LotteryParticipant(s));
+                System.out.println("Введите место в очереди участника:");
+                int placeInQueue = userView.getInt();
+                lotteryService.putParticipant(new LotteryParticipant(s,placeInQueue));
                 start();
                 break;
             case 4:
