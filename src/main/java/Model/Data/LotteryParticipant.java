@@ -16,7 +16,7 @@ public class LotteryParticipant {
 
     public LotteryParticipant(String name) {
         this.name = name;
-        placeInQueue = 100000;
+        placeInQueue = Integer.MAX_VALUE;
     }
 
     public String getName() {
